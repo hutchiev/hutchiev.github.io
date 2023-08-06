@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.console-border {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  max-width: 100%;
+  border-width: 7px;
+  border-color: black;
+  border-style: double;
+  margin-bottom: 0.5em;
+}
+
+.console-border > section p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.console-border > .hr {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
