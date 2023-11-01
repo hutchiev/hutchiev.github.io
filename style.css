@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1cap;
 }
 
 html {
@@ -13,32 +14,50 @@ body {
   display: flex;
   flex-direction: column;
   width: auto;
-}
-
-.console-border {
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 700px;
+  width: 650px;
   max-width: 100%;
-  border-width: 7px;
-  border-color: black;
-  border-style: double;
-  margin-bottom: 0.5em;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.50);
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.50);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.50);
 }
 
-.console-border > section p {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.console-border > section > ul {
+body > header, 
+body > main,
+body > footer {
+  padding-left: 1em;
   padding-right: 1em;
 }
 
-.console-border > .hr {
-  width: 100%;
+header {
+  background-color: orange;
+}
+
+main > section p,
+main > section table,
+footer > section p {
+  border-collapse: collapse;
+}
+
+main > section table tr td:last-child {
+  padding-left: 1em;
+}
+
+main > section table tr td:first-child {
+  padding-right: 1em;
+  border-right: 2px solid #ffd388;
+}
+
+main, footer {
+  background-color: rgb(255, 241, 216);
+}
+
+main > .hr {
   height: 2px;
-  background-color: black;
+  background-color: #ffd388;
 }
 
 @media only screen and (max-width: 500px) {
